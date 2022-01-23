@@ -1,0 +1,33 @@
+{
+  "name": "phase2project",
+  "version": "1.0.0",
+  "description": "Inventory App",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattalagala/Phase2Project.git"
+  },
+  "author": "Daisy Umotong, Adeel Rajwani, Matthew Alagala",
+  "bugs": {
+    "url": "https://github.com/mattalagala/Phase2Project/issues"
+  },
+  "homepage": "https://github.com/mattalagala/Phase2Project#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "cookie-session": "^1.4.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.1",
+    "jquery": "^3.5.1",
+    "knex": "^0.21.21",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.4",
+    "normalize-path": "^3.0.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0",
+    "pg": "^8.7.1",
+    "startbootstrap-heroic-features": "^4.2.2"
+  },
+  "scripts": {
+    "start-dev": "nodemon app.js"
+  }
+}

@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+.gallery-section {
+  width: 100%;
+  padding: 60px 0;
+  background: #f1f1f1;
+}
+
+.inner-width {
+  width: 100%;
+  max-width: 980px;
+  /* max-width: 1200px; */
+  margin: auto;
+  padding: 0 20px;
+}
+
+.gallery-section h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+}
+
+.border {
+  width: 180px;
+  height: 4px;
+  background: #333;
+  margin: 6px auto;
+}
+
+.gallery-section .gallery {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+}
+
+.gallery-section .image {
+  flex: 25%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.gallery-section .image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+
+.gallery-section .image:hover img {
+  transform: scale(1.4) rotate(15deg);
+}
+
+@media screen and (max-width: 960px) {
+  .gallery-section .image {
+    flex: 33.33%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gallery-section .image {
+    flex: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-section .image {
+    flex: 100%;
+  }
+}
+
+/*-- Page --*/
+
+.card-img-top {
+  display: inline-block;
+}
+
+.col-4 {
+  margin: 20px 0px;
+}
+
+.card-footer {
+  justify-content: center;
+}
+.card-title {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#card-description-title {
+  color: darkslategrey;
+  margin-top: 25px;
+  font-weight: bold;
+  text-shadow: lightgrey 0px 0 10px;
+  /* text-align: right; */
+}
+
+#logout-message {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+#add-project-fields {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+#new-message {
+  margin-top: 200px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.masthead {
+  color: aliceblue;
+  height: 1vh;
+  min-height: 400px;
+  background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?cs=srgb&dl=blue-and-red-galaxy-artwork-1629236.jpg&fm=jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.lead {
+  font-size: 30px;
+}
+
+#product-mast {
+  color: aliceblue;
+  height: 1vh;
+  min-height: 200px;
+  background-color: lightgray;
+  /* background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg?cs=srgb&dl=blue-and-red-galaxy-artwork-1629236.jpg&fm=jpg"); */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#testImage {
+  height: auto;
+  width: 50%;
+}
+
+#gallery {
+  padding-top: 25px;
+}
+
+.product-text {
+  font-size: 20px;
+}
+
+#contact-section{
+  background-color: rgb(226, 226, 226);
+}
+
+
+
+
+
+/*--------ANIMATION SETTINGS----------*/
+
+.img-content {
+  margin-top: 40px;
+}
+
+.img-content .title {
+  margin-bottom: 20px;
+}

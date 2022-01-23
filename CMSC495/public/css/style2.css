@@ -1,0 +1,66 @@
+
+#sect-title{
+  text-decoration: underline;
+  /* font-weight: bold; */
+}
+
+#lang-img {
+  height: 75px;
+  width:auto;
+}
+
+.fab,.fad, .fas{
+
+  color: blue;
+  font-size: 60px;
+  
+  padding-left: 20px;
+
+}
+#indIcon{
+  color:orange;
+  font-size: 40px;
+  align-items: center;
+  padding-left:10px;
+
+}
+
+#socialIcons {
+  color:orangered;
+  font-size: 30px;
+  padding-left:0px;
+  padding-right:10px;
+}
+
+#contact-description-title{
+  color: darkslategrey;
+  margin-top: 25px;
+  font-weight: bold;
+  text-shadow: lightgrey 0px 0 10px;
+  /* text-align: right; */
+  /* padding-top: 20px; */
+  font-size: 20px;
+}
+
+.card-newdisplay{
+  display:none;
+}
+
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contactMargin {
+
+  margin-bottom: 200px;
+
+}
+
+p.contact{
+  padding-left: 235px;
+}
+
+
+
