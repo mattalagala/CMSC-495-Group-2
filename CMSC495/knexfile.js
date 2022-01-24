@@ -4,9 +4,11 @@ module.exports = {
 	development: {
 		client: "pg",
 		connection: {
-			database: "postgres",
+			host: "40.124.9.20",
+			database: "cmsc495db",
 			user: "postgres",
-			password: "password",
+			password: "",
+			charset: "utf8",
 		},
 		pool: {
 			min: 2,
