@@ -1,17 +1,17 @@
 {
-  "name": "phase2project",
+  "name": "CMSC-495 Sports Tracker",
   "version": "1.0.0",
-  "description": "Inventory App",
+  "description": "Sports Statistics Tracker",
   "main": "app.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattalagala/Phase2Project.git"
+    "url": "git+https://github.com/mattalagala/Phase2Project"
   },
-  "author": "Daisy Umotong, Adeel Rajwani, Matthew Alagala",
+  "author": "David Dickens, Jason Jung, Matthew Alagala",
   "bugs": {
-    "url": "https://github.com/mattalagala/Phase2Project/issues"
+    "url": "https://github.com:mattalagala/CMSC-495-Group-2/issues"
   },
-  "homepage": "https://github.com/mattalagala/Phase2Project#readme",
+  "homepage": "https://github.com:mattalagala/CMSC-495-Group-2#readme",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "cookie-session": "^1.4.0",
