@@ -8,7 +8,7 @@ Step 2:
 
 Step 3:
 
-`npx knex seed:fun`
+`npx knex seed:run`
 
 Step 4:
 `npm run start-dev`
