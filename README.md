@@ -5,3 +5,10 @@ Step 1:
 
 Step 2:
 `npx knex migrate:latest`
+
+Step 3:
+
+`npx knex seed:fun`
+
+Step 4:
+`npm run start-dev`
