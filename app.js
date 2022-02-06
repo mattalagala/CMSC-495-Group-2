@@ -1,7 +1,7 @@
 const express = require("express");
 const passport = require("passport");
 const cookieSession = require("cookie-session");
-const port = require("./authenticate");
+const port = require("./lib/authenticate");
 
 //Image Upload
 const multer = require("multer");
