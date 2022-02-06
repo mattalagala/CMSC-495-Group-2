@@ -1,5 +1,11 @@
 ## CMSC 495 Group 2
 
+Pre-Req:
+
+Install postgres with default values with password set to "password"
+
+See knexfile.js for PG login in info
+
 Step 1:
 `npm install`
 
