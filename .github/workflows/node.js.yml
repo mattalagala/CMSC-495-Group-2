@@ -32,9 +32,9 @@ jobs:
         npx knex migrate:latest
         npx knex seed:run
     - run: |    
-        pm2 stop ecosystem.config.js
-        pm2 start ecosystem.config.js
-        pm2 save
+        npm pm2-stop
+        npm pm2-start
+        npm pm2-save
     - run: |
         sudo service nginx restart
 
