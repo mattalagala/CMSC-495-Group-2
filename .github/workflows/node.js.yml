@@ -26,7 +26,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm ci
-    - run: npx knex migrate:latest
-    - run: npx knex seed:run
+    - run: |
+        npm ci
+        npx knex migrate:latest
+        npx knex seed:run
+        pm2 stop 0
+        pm2 start 0
+        pm2 save
+        sudo service nginx restart
 
