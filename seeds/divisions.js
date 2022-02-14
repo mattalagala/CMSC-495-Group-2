@@ -1,17 +1,18 @@
 exports.seed = function (knex) {
-    // Deletes ALL existing entries
-    return knex('divisions').del()
-        .then(function () {
-            // Seed division entries
-            return knex('divisions').insert([
-                { id: 1, name: 'AFC North' },
-                { id: 2, name: 'AFC East' },
-                { id: 3, name: 'AFC South' },
-                { id: 4, name: 'AFC West' },
-                { id: 5, name: 'NFC North' },
-                { id: 6, name: 'NFC East' },
-                { id: 7, name: 'NFC South' },
-                { id: 8, name: 'NFC West' }
-            ]);
-        });
+	// Deletes ALL existing entries
+	return knex("divisions")
+		.del()
+		.then(function () {
+			// Seed division entries
+			return knex("divisions").insert([
+				{ division_id: 1, division_name: "AFC North" },
+				{ division_id: 2, division_name: "AFC East" },
+				{ division_id: 3, division_name: "AFC South" },
+				{ division_id: 4, division_name: "AFC West" },
+				{ division_id: 5, division_name: "NFC North" },
+				{ division_id: 6, division_name: "NFC East" },
+				{ division_id: 7, division_name: "NFC South" },
+				{ division_id: 8, division_name: "NFC West" },
+			]);
+		});
 };
