@@ -32,6 +32,7 @@ jobs:
         npx knex migrate:latest
         npx knex seed:run
     - run: |    
+        PM2_HOME=/var/www/cmscp2site/_work/CMSC-495-Group-2/CMSC-495-Group-2 
         npm run pm2-stop
         npm run pm2-start
         npm run pm2-save
