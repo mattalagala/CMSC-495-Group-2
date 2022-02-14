@@ -5,7 +5,7 @@ exports.seed = function (knex) {
 		.then(function () {
 			// Seed division entries
 			return knex("division").insert([
-				{ division_id: 1, division_name: "AFC North!!!!!!" },
+				{ division_id: 1, division_name: "AFC North" },
 				{ division_id: 2, division_name: "AFC East" },
 				{ division_id: 3, division_name: "AFC South" },
 				{ division_id: 4, division_name: "AFC West" },

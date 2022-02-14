@@ -31,6 +31,6 @@ jobs:
     - run: |
         npx knex migrate:latest
         npx knex seed:run
-    - run: |
-        sudo service nginx restart
+    # - run: |
+    #     sudo service nginx restart
 
