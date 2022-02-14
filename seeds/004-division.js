@@ -1,10 +1,10 @@
 exports.seed = function (knex) {
 	// Deletes ALL existing entries
-	return knex("divisions")
+	return knex("division")
 		.del()
 		.then(function () {
 			// Seed division entries
-			return knex("divisions").insert([
+			return knex("division").insert([
 				{ division_id: 1, division_name: "AFC North" },
 				{ division_id: 2, division_name: "AFC East" },
 				{ division_id: 3, division_name: "AFC South" },

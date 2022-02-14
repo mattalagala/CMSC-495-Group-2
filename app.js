@@ -90,6 +90,7 @@ app.get("/logout", (req, res) => {
 app.get("/", function (req, res) {
 	db.getCategoryList().then((lists) => {
 		res.render("index", { lists: lists });
+		console.log(lists);
 	});
 });
 

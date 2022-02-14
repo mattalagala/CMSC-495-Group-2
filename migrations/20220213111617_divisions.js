@@ -7,7 +7,7 @@ mtime timestamptz default current_timestamp
 )
 `;
 const dropDivisionTable = `
-drop table division;
+drop table division
 `;
 
 exports.up = function (knex) {

@@ -4,8 +4,8 @@ module.exports = {
 	development: {
 		client: "pg",
 		connection: {
-			database: "p2db",
-			user: "p2vmuser",
+			database: "postgres",
+			user: "postgres",
 			password: "password",
 		},
 		pool: {

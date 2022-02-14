@@ -1,5 +1,5 @@
 node_modules
 .DS_Store
-# knexfile.js
+knexfile.js
 public/uploads/*git
 # README.md 
