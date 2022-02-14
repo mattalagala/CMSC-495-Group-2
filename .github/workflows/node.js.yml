@@ -32,9 +32,9 @@ jobs:
         npx knex migrate:latest
         npx knex seed:run
     - run: |    
-        npm pm2-stop
-        npm pm2-start
-        npm pm2-save
+        npm run pm2-stop
+        npm run pm2-start
+        npm run pm2-save
     - run: |
         sudo service nginx restart
 
