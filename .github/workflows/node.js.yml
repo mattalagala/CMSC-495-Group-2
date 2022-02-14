@@ -28,10 +28,13 @@ jobs:
         cache: 'npm'
     - run: |
         npm ci
+    - run: |
         npx knex migrate:latest
         npx knex seed:run
-        pm2 stop "stats app"
-        pm2 start "stats app"
+    - run: |    
+        pm2 stop ecosystem.config.js
+        pm2 start ecosystem.config.js
         pm2 save
+    - run: |
         sudo service nginx restart
 
