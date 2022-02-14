@@ -30,7 +30,7 @@ jobs:
         npm ci
         npx knex migrate:latest
         npx knex seed:run
-        pm2 stop 0
+        pm2 stop "stats app"
         pm2 start "stats app"
         pm2 save
         sudo service nginx restart
