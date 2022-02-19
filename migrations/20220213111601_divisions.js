@@ -2,6 +2,7 @@ const createDivisionTable = `
 create table division (
 "division_id" serial primary key,
 "division_name" text,
+"division_logo" text,
 ctime timestamptz,
 mtime timestamptz default current_timestamp
 )
@@ -15,5 +16,5 @@ exports.up = function (knex) {
 };
 
 exports.down = function (knex) {
-	return knex.raw(createDivisionTable);
+	return knex.raw(dropDivisionTable);
 };

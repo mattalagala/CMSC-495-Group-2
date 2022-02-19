@@ -6,7 +6,7 @@ exports.seed = function (knex) {
 			// Seed division entries
 			return knex("players").insert([
 				{
-					id: 1,
+					player_id: 1,
 					player_name: "T. Hill",
 					position: "WR",
 					team_id: 1,
@@ -34,7 +34,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 2,
+					player_id: 2,
 					player_name: "D. Cook",
 					position: "RB",
 					team_id: 18,
@@ -62,7 +62,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 3,
+					player_id: 3,
 					player_name: "E. Elliott",
 					position: "RB",
 					team_id: 21,
@@ -90,8 +90,8 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 4,
-					player_name: "C. Ridley",
+					player_id: 4,
+					player_name: "C. Rplayer_idley",
 					position: "WR",
 					team_id: 29,
 					pass_completions: "0",
@@ -118,7 +118,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 5,
+					player_id: 5,
 					player_name: "K. Murray",
 					position: "QB",
 					team_id: 14,
@@ -146,7 +146,7 @@ exports.seed = function (knex) {
 					fumble_lost: "4.1",
 				},
 				{
-					id: 6,
+					player_id: 6,
 					player_name: "J. Allen",
 					position: "QB",
 					team_id: 2,
@@ -174,7 +174,7 @@ exports.seed = function (knex) {
 					fumble_lost: "5",
 				},
 				{
-					id: 7,
+					player_id: 7,
 					player_name: "S. Barkley",
 					position: "RB",
 					team_id: 22,
@@ -202,7 +202,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 8,
+					player_id: 8,
 					player_name: "R. Wilson",
 					position: "QB",
 					team_id: 6,
@@ -230,7 +230,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.3",
 				},
 				{
-					id: 9,
+					player_id: 9,
 					player_name: "D. Waller",
 					position: "TE",
 					team_id: 16,
@@ -258,7 +258,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 10,
+					player_id: 10,
 					player_name: "C. McCaffrey",
 					position: "RB",
 					team_id: 24,
@@ -286,7 +286,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.3",
 				},
 				{
-					id: 11,
+					player_id: 11,
 					player_name: "S. Diggs",
 					position: "WR",
 					team_id: 2,
@@ -314,7 +314,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 12,
+					player_id: 12,
 					player_name: "A. Ekeler",
 					position: "RB",
 					team_id: 17,
@@ -342,7 +342,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 13,
+					player_id: 13,
 					player_name: "L. Jackson",
 					position: "QB",
 					team_id: 7,
@@ -370,7 +370,7 @@ exports.seed = function (knex) {
 					fumble_lost: "5.1",
 				},
 				{
-					id: 14,
+					player_id: 14,
 					player_name: "A. Kamara",
 					position: "RB",
 					team_id: 4,
@@ -398,7 +398,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 15,
+					player_id: 15,
 					player_name: "A. Jones",
 					position: "RB",
 					team_id: 3,
@@ -426,7 +426,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 16,
+					player_id: 16,
 					player_name: "D. Hopkins",
 					position: "WR",
 					team_id: 14,
@@ -454,7 +454,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 17,
+					player_id: 17,
 					player_name: "T. Kelce",
 					position: "TE",
 					team_id: 1,
@@ -482,7 +482,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 18,
+					player_id: 18,
 					player_name: "K. Allen",
 					position: "WR",
 					team_id: 17,
@@ -510,7 +510,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 19,
+					player_id: 19,
 					player_name: "J. Jefferson",
 					position: "WR",
 					team_id: 18,
@@ -538,7 +538,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 20,
+					player_id: 20,
 					player_name: "J. Taylor",
 					position: "RB",
 					team_id: 9,
@@ -566,7 +566,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 21,
+					player_id: 21,
 					player_name: "A. Gibson",
 					position: "RB",
 					team_id: 20,
@@ -594,7 +594,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 22,
+					player_id: 22,
 					player_name: "G. Kittle",
 					position: "TE",
 					team_id: 23,
@@ -622,7 +622,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 23,
+					player_id: 23,
 					player_name: "D. Adams",
 					position: "WR",
 					team_id: 3,
@@ -650,7 +650,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 24,
+					player_id: 24,
 					player_name: "T. McLaurin",
 					position: "WR",
 					team_id: 20,
@@ -678,7 +678,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 25,
+					player_id: 25,
 					player_name: "P. Mahomes",
 					position: "QB",
 					team_id: 1,
@@ -706,7 +706,7 @@ exports.seed = function (knex) {
 					fumble_lost: "2.9",
 				},
 				{
-					id: 26,
+					player_id: 26,
 					player_name: "N. Chubb",
 					position: "RB",
 					team_id: 8,
@@ -734,7 +734,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 27,
+					player_id: 27,
 					player_name: "D. Metcalf",
 					position: "WR",
 					team_id: 6,
@@ -762,7 +762,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 28,
+					player_id: 28,
 					player_name: "D. Henry",
 					position: "RB",
 					team_id: 11,
@@ -790,7 +790,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 29,
+					player_id: 29,
 					player_name: "A. Brown",
 					position: "WR",
 					team_id: 11,
@@ -818,7 +818,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 30,
+					player_id: 30,
 					player_name: "J. Herbert",
 					position: "QB",
 					team_id: 17,
@@ -846,7 +846,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3",
 				},
 				{
-					id: 31,
+					player_id: 31,
 					player_name: "M. Andrews",
 					position: "TE",
 					team_id: 7,
@@ -874,7 +874,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 32,
+					player_id: 32,
 					player_name: "J. Mixon",
 					position: "RB",
 					team_id: 27,
@@ -902,7 +902,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 33,
+					player_id: 33,
 					player_name: "C. Carson",
 					position: "RB",
 					team_id: 6,
@@ -930,7 +930,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.3",
 				},
 				{
-					id: 34,
+					player_id: 34,
 					player_name: "C. Godwin",
 					position: "WR",
 					team_id: 10,
@@ -958,7 +958,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 35,
+					player_id: 35,
 					player_name: "K. Pitts",
 					position: "TE",
 					team_id: 29,
@@ -986,7 +986,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 36,
+					player_id: 36,
 					player_name: "T. Hockenson",
 					position: "TE",
 					team_id: 5,
@@ -1014,7 +1014,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.3",
 				},
 				{
-					id: 37,
+					player_id: 37,
 					player_name: "C. Lamb",
 					position: "WR",
 					team_id: 21,
@@ -1042,7 +1042,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 38,
+					player_id: 38,
 					player_name: "D. Montgomery",
 					position: "RB",
 					team_id: 15,
@@ -1070,7 +1070,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 39,
+					player_id: 39,
 					player_name: "D. Prescott",
 					position: "QB",
 					team_id: 21,
@@ -1098,7 +1098,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.2",
 				},
 				{
-					id: 40,
+					player_id: 40,
 					player_name: "C. Edwards-Helaire",
 					position: "RB",
 					team_id: 1,
@@ -1126,7 +1126,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 41,
+					player_id: 41,
 					player_name: "M. Evans",
 					position: "WR",
 					team_id: 10,
@@ -1154,7 +1154,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 42,
+					player_id: 42,
 					player_name: "N. Harris",
 					position: "RB",
 					team_id: 5,
@@ -1182,7 +1182,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 43,
+					player_id: 43,
 					player_name: "J. Dobbins",
 					position: "RB",
 					team_id: 7,
@@ -1210,7 +1210,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 44,
+					player_id: 44,
 					player_name: "A. Robinson II",
 					position: "WR",
 					team_id: 15,
@@ -1238,7 +1238,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 45,
+					player_id: 45,
 					player_name: "A. Rodgers",
 					position: "QB",
 					team_id: 3,
@@ -1266,7 +1266,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.2",
 				},
 				{
-					id: 46,
+					player_id: 46,
 					player_name: "C. Kupp",
 					position: "WR",
 					team_id: 12,
@@ -1294,7 +1294,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 47,
+					player_id: 47,
 					player_name: "T. Brady",
 					position: "QB",
 					team_id: 10,
@@ -1322,7 +1322,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3",
 				},
 				{
-					id: 48,
+					player_id: 48,
 					player_name: "J. Jones",
 					position: "WR",
 					team_id: 11,
@@ -1350,7 +1350,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 49,
+					player_id: 49,
 					player_name: "T. Lockett",
 					position: "WR",
 					team_id: 6,
@@ -1378,7 +1378,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 50,
+					player_id: 50,
 					player_name: "M. Sanders",
 					position: "RB",
 					team_id: 28,
@@ -1406,7 +1406,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 51,
+					player_id: 51,
 					player_name: "A. Thielen",
 					position: "WR",
 					team_id: 18,
@@ -1434,7 +1434,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 52,
+					player_id: 52,
 					player_name: "A. Cooper",
 					position: "WR",
 					team_id: 21,
@@ -1462,7 +1462,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 53,
+					player_id: 53,
 					player_name: "D. Moore",
 					position: "WR",
 					team_id: 24,
@@ -1490,7 +1490,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 54,
+					player_id: 54,
 					player_name: "J. Jacobs",
 					position: "RB",
 					team_id: 16,
@@ -1518,7 +1518,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 55,
+					player_id: 55,
 					player_name: "R. Woods",
 					position: "WR",
 					team_id: 12,
@@ -1546,7 +1546,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 56,
+					player_id: 56,
 					player_name: "D. Swift",
 					position: "RB",
 					team_id: 5,
@@ -1574,7 +1574,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 57,
+					player_id: 57,
 					player_name: "K. Hunt",
 					position: "RB",
 					team_id: 8,
@@ -1602,7 +1602,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 58,
+					player_id: 58,
 					player_name: "D. Henderson Jr.",
 					position: "RB",
 					team_id: 12,
@@ -1630,7 +1630,7 @@ exports.seed = function (knex) {
 					fumble_lost: "2.6",
 				},
 				{
-					id: 59,
+					player_id: 59,
 					player_name: "R. Tonyan",
 					position: "TE",
 					team_id: 3,
@@ -1658,7 +1658,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 60,
+					player_id: 60,
 					player_name: "T. Higbee",
 					position: "TE",
 					team_id: 12,
@@ -1686,7 +1686,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 61,
+					player_id: 61,
 					player_name: "B. Aiyuk",
 					position: "WR",
 					team_id: 23,
@@ -1714,7 +1714,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 62,
+					player_id: 62,
 					player_name: "D. Johnson",
 					position: "WR",
 					team_id: 5,
@@ -1742,7 +1742,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 63,
+					player_id: 63,
 					player_name: "M. Stafford",
 					position: "QB",
 					team_id: 12,
@@ -1770,7 +1770,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3",
 				},
 				{
-					id: 64,
+					player_id: 64,
 					player_name: "N. Fant",
 					position: "TE",
 					team_id: 4,
@@ -1798,7 +1798,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 65,
+					player_id: 65,
 					player_name: "O. Beckham Jr.",
 					position: "WR",
 					team_id: 8,
@@ -1826,7 +1826,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 66,
+					player_id: 66,
 					player_name: "J. Robinson",
 					position: "RB",
 					team_id: 32,
@@ -1854,7 +1854,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 67,
+					player_id: 67,
 					player_name: "J. Hurts",
 					position: "QB",
 					team_id: 28,
@@ -1882,7 +1882,7 @@ exports.seed = function (knex) {
 					fumble_lost: "2.1",
 				},
 				{
-					id: 68,
+					player_id: 68,
 					player_name: "R. Tannehill",
 					position: "QB",
 					team_id: 11,
@@ -1910,7 +1910,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.1",
 				},
 				{
-					id: 69,
+					player_id: 69,
 					player_name: "M. Gaskin",
 					position: "RB",
 					team_id: 13,
@@ -1938,7 +1938,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 70,
+					player_id: 70,
 					player_name: "M. Davis",
 					position: "RB",
 					team_id: 29,
@@ -1966,7 +1966,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 71,
+					player_id: 71,
 					player_name: "D. Goedert",
 					position: "TE",
 					team_id: 28,
@@ -1994,7 +1994,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 72,
+					player_id: 72,
 					player_name: "L. Thomas",
 					position: "TE",
 					team_id: 20,
@@ -2022,7 +2022,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.4",
 				},
 				{
-					id: 73,
+					player_id: 73,
 					player_name: "C. Claypool",
 					position: "WR",
 					team_id: 5,
@@ -2050,7 +2050,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 74,
+					player_id: 74,
 					player_name: "T. Higgins",
 					position: "WR",
 					team_id: 27,
@@ -2078,7 +2078,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 75,
+					player_id: 75,
 					player_name: "J. Smith-Schuster",
 					position: "WR",
 					team_id: 5,
@@ -2106,7 +2106,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 76,
+					player_id: 76,
 					player_name: "R. Anderson",
 					position: "WR",
 					team_id: 24,
@@ -2134,7 +2134,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 77,
+					player_id: 77,
 					player_name: "C. Edmonds",
 					position: "RB",
 					team_id: 14,
@@ -2162,7 +2162,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 78,
+					player_id: 78,
 					player_name: "R. Mostert",
 					position: "RB",
 					team_id: 23,
@@ -2190,7 +2190,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 79,
+					player_id: 79,
 					player_name: "K. Golladay",
 					position: "WR",
 					team_id: 22,
@@ -2218,7 +2218,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 80,
+					player_id: 80,
 					player_name: "J. Jeudy",
 					position: "WR",
 					team_id: 4,
@@ -2246,7 +2246,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 81,
+					player_id: 81,
 					player_name: "R. Jones II",
 					position: "RB",
 					team_id: 10,
@@ -2274,7 +2274,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 82,
+					player_id: 82,
 					player_name: "J. Chase",
 					position: "WR",
 					team_id: 27,
@@ -2302,7 +2302,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 83,
+					player_id: 83,
 					player_name: "D. Harris",
 					position: "RB",
 					team_id: 19,
@@ -2330,7 +2330,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 84,
+					player_id: 84,
 					player_name: "D. Samuel",
 					position: "WR",
 					team_id: 23,
@@ -2358,7 +2358,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 85,
+					player_id: 85,
 					player_name: "L. Fournette",
 					position: "RB",
 					team_id: 10,
@@ -2386,7 +2386,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 86,
+					player_id: 86,
 					player_name: "J. Williams",
 					position: "RB",
 					team_id: 4,
@@ -2414,7 +2414,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 87,
+					player_id: 87,
 					player_name: "T. Sermon",
 					position: "RB",
 					team_id: 23,
@@ -2442,7 +2442,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 88,
+					player_id: 88,
 					player_name: "M. Gesicki",
 					position: "TE",
 					team_id: 13,
@@ -2470,7 +2470,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 89,
+					player_id: 89,
 					player_name: "C. Sutton",
 					position: "WR",
 					team_id: 4,
@@ -2498,7 +2498,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 90,
+					player_id: 90,
 					player_name: "M. Gordon III",
 					position: "RB",
 					team_id: 4,
@@ -2526,7 +2526,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 91,
+					player_id: 91,
 					player_name: "J. Burrow",
 					position: "QB",
 					team_id: 27,
@@ -2554,7 +2554,7 @@ exports.seed = function (knex) {
 					fumble_lost: "2.1",
 				},
 				{
-					id: 92,
+					player_id: 92,
 					player_name: "T. Boyd",
 					position: "WR",
 					team_id: 27,
@@ -2582,7 +2582,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 93,
+					player_id: 93,
 					player_name: "J. Conner",
 					position: "RB",
 					team_id: 14,
@@ -2610,7 +2610,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.3",
 				},
 				{
-					id: 94,
+					player_id: 94,
 					player_name: "B. Cooks",
 					position: "WR",
 					team_id: 30,
@@ -2638,7 +2638,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 95,
+					player_id: 95,
 					player_name: "A. Brown",
 					position: "WR",
 					team_id: 10,
@@ -2666,7 +2666,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 96,
+					player_id: 96,
 					player_name: "I. Smith Jr.",
 					position: "TE",
 					team_id: 18,
@@ -2694,7 +2694,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 97,
+					player_id: 97,
 					player_name: "D. Chark Jr.",
 					position: "WR",
 					team_id: 32,
@@ -2722,7 +2722,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 98,
+					player_id: 98,
 					player_name: "Z. Moss",
 					position: "RB",
 					team_id: 2,
@@ -2750,7 +2750,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 99,
+					player_id: 99,
 					player_name: "A. Dillon",
 					position: "RB",
 					team_id: 3,
@@ -2778,7 +2778,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.7",
 				},
 				{
-					id: 100,
+					player_id: 100,
 					player_name: "M. Thomas",
 					position: "WR",
 					team_id: 4,
@@ -2806,7 +2806,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 101,
+					player_id: 101,
 					player_name: "C. Davis",
 					position: "WR",
 					team_id: 31,
@@ -2834,7 +2834,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.3",
 				},
 				{
-					id: 102,
+					player_id: 102,
 					player_name: "J. Landry",
 					position: "WR",
 					team_id: 8,
@@ -2862,7 +2862,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 103,
+					player_id: 103,
 					player_name: "R. Gronkowski",
 					position: "TE",
 					team_id: 10,
@@ -2890,7 +2890,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 104,
+					player_id: 104,
 					player_name: "T. Lawrence",
 					position: "QB",
 					team_id: 32,
@@ -2918,7 +2918,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 105,
+					player_id: 105,
 					player_name: "M. Ryan",
 					position: "QB",
 					team_id: 29,
@@ -2946,7 +2946,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3",
 				},
 				{
-					id: 106,
+					player_id: 106,
 					player_name: "D. Smith",
 					position: "WR",
 					team_id: 28,
@@ -2974,7 +2974,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 107,
+					player_id: 107,
 					player_name: "K. Drake",
 					position: "RB",
 					team_id: 16,
@@ -3002,7 +3002,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 108,
+					player_id: 108,
 					player_name: "D. Singletary",
 					position: "RB",
 					team_id: 2,
@@ -3030,7 +3030,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 109,
+					player_id: 109,
 					player_name: "B. Mayfield",
 					position: "QB",
 					team_id: 8,
@@ -3058,7 +3058,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.3",
 				},
 				{
-					id: 110,
+					player_id: 110,
 					player_name: "M. Carter",
 					position: "RB",
 					team_id: 31,
@@ -3086,7 +3086,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 111,
+					player_id: 111,
 					player_name: "K. Cousins",
 					position: "QB",
 					team_id: 18,
@@ -3114,7 +3114,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.1",
 				},
 				{
-					id: 112,
+					player_id: 112,
 					player_name: "G. Edwards",
 					position: "RB",
 					team_id: 7,
@@ -3142,7 +3142,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 113,
+					player_id: 113,
 					player_name: "W. Fuller V",
 					position: "WR",
 					team_id: 13,
@@ -3170,7 +3170,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 114,
+					player_id: 114,
 					player_name: "D. Johnson",
 					position: "RB",
 					team_id: 30,
@@ -3198,7 +3198,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 115,
+					player_id: 115,
 					player_name: "M. Williams",
 					position: "WR",
 					team_id: 17,
@@ -3226,7 +3226,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 116,
+					player_id: 116,
 					player_name: "M. Gallup",
 					position: "WR",
 					team_id: 21,
@@ -3254,7 +3254,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 117,
+					player_id: 117,
 					player_name: "H. Henry",
 					position: "TE",
 					team_id: 19,
@@ -3282,7 +3282,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 118,
+					player_id: 118,
 					player_name: "L. Shenault Jr.",
 					position: "WR",
 					team_id: 32,
@@ -3310,7 +3310,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 119,
+					player_id: 119,
 					player_name: "N. Hines",
 					position: "RB",
 					team_id: 9,
@@ -3338,7 +3338,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.3",
 				},
 				{
-					id: 120,
+					player_id: 120,
 					player_name: "J. Smith",
 					position: "TE",
 					team_id: 19,
@@ -3366,7 +3366,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 121,
+					player_id: 121,
 					player_name: "J. Williams",
 					position: "RB",
 					team_id: 5,
@@ -3394,7 +3394,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 122,
+					player_id: 122,
 					player_name: "J. Waddle",
 					position: "WR",
 					team_id: 13,
@@ -3422,7 +3422,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 123,
+					player_id: 123,
 					player_name: "C. Samuel",
 					position: "WR",
 					team_id: 20,
@@ -3450,7 +3450,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 124,
+					player_id: 124,
 					player_name: "M. Jones Jr.",
 					position: "WR",
 					team_id: 32,
@@ -3478,7 +3478,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 125,
+					player_id: 125,
 					player_name: "M. Hardman",
 					position: "WR",
 					team_id: 1,
@@ -3506,7 +3506,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 126,
+					player_id: 126,
 					player_name: "E. Engram",
 					position: "TE",
 					team_id: 22,
@@ -3534,7 +3534,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 127,
+					player_id: 127,
 					player_name: "T. Pollard",
 					position: "RB",
 					team_id: 21,
@@ -3562,7 +3562,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 128,
+					player_id: 128,
 					player_name: "M. Callaway",
 					position: "WR",
 					team_id: 4,
@@ -3590,7 +3590,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 129,
+					player_id: 129,
 					player_name: "M. Pittman Jr.",
 					position: "WR",
 					team_id: 9,
@@ -3618,7 +3618,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 130,
+					player_id: 130,
 					player_name: "A. Hooper",
 					position: "TE",
 					team_id: 8,
@@ -3646,7 +3646,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 131,
+					player_id: 131,
 					player_name: "D. Mooney",
 					position: "WR",
 					team_id: 15,
@@ -3674,7 +3674,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 132,
+					player_id: 132,
 					player_name: "T. Lance",
 					position: "QB",
 					team_id: 23,
@@ -3702,7 +3702,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 133,
+					player_id: 133,
 					player_name: "R. Fitzpatrick",
 					position: "QB",
 					team_id: 20,
@@ -3730,7 +3730,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.4",
 				},
 				{
-					id: 134,
+					player_id: 134,
 					player_name: "M. Brown",
 					position: "WR",
 					team_id: 7,
@@ -3758,7 +3758,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 135,
+					player_id: 135,
 					player_name: "J. Fields",
 					position: "QB",
 					team_id: 15,
@@ -3786,7 +3786,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 136,
+					player_id: 136,
 					player_name: "D. Watson",
 					position: "QB",
 					team_id: 30,
@@ -3814,7 +3814,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 137,
+					player_id: 137,
 					player_name: "T. Etienne",
 					position: "RB",
 					team_id: 32,
@@ -3842,7 +3842,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 138,
+					player_id: 138,
 					player_name: "S. Michel",
 					position: "RB",
 					team_id: 12,
@@ -3870,7 +3870,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 139,
+					player_id: 139,
 					player_name: "P. Lindsay",
 					position: "RB",
 					team_id: 30,
@@ -3898,7 +3898,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 140,
+					player_id: 140,
 					player_name: "D. Parker",
 					position: "WR",
 					team_id: 13,
@@ -3926,7 +3926,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 141,
+					player_id: 141,
 					player_name: "H. Ruggs III",
 					position: "WR",
 					team_id: 16,
@@ -3954,7 +3954,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 142,
+					player_id: 142,
 					player_name: "A. Trautman",
 					position: "TE",
 					team_id: 4,
@@ -3982,7 +3982,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 143,
+					player_id: 143,
 					player_name: "J. Crowder",
 					position: "WR",
 					team_id: 31,
@@ -4010,7 +4010,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.7",
 				},
 				{
-					id: 144,
+					player_id: 144,
 					player_name: "B. Roethlisberger",
 					position: "QB",
 					team_id: 5,
@@ -4038,7 +4038,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.7",
 				},
 				{
-					id: 145,
+					player_id: 145,
 					player_name: "T. Hilton",
 					position: "WR",
 					team_id: 9,
@@ -4066,7 +4066,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 146,
+					player_id: 146,
 					player_name: "C. Beasley",
 					position: "WR",
 					team_id: 2,
@@ -4094,7 +4094,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 147,
+					player_id: 147,
 					player_name: "A. Mattison",
 					position: "RB",
 					team_id: 18,
@@ -4122,7 +4122,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 148,
+					player_id: 148,
 					player_name: "N. Agholor",
 					position: "WR",
 					team_id: 19,
@@ -4150,7 +4150,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.3",
 				},
 				{
-					id: 149,
+					player_id: 149,
 					player_name: "D. Jones",
 					position: "QB",
 					team_id: 22,
@@ -4178,7 +4178,7 @@ exports.seed = function (knex) {
 					fumble_lost: "4.2",
 				},
 				{
-					id: 150,
+					player_id: 150,
 					player_name: "G. Everett",
 					position: "TE",
 					team_id: 6,
@@ -4206,7 +4206,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 151,
+					player_id: 151,
 					player_name: "L. Murray",
 					position: "RB",
 					team_id: 4,
@@ -4234,7 +4234,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 152,
+					player_id: 152,
 					player_name: "J. McKissic",
 					position: "RB",
 					team_id: 20,
@@ -4262,7 +4262,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 153,
+					player_id: 153,
 					player_name: "T. Tagovailoa",
 					position: "QB",
 					team_id: 13,
@@ -4290,7 +4290,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.6",
 				},
 				{
-					id: 154,
+					player_id: 154,
 					player_name: "E. Moore",
 					position: "WR",
 					team_id: 31,
@@ -4318,7 +4318,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 155,
+					player_id: 155,
 					player_name: "S. Shepard",
 					position: "WR",
 					team_id: 22,
@@ -4346,7 +4346,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.3",
 				},
 				{
-					id: 156,
+					player_id: 156,
 					player_name: "J. Winston",
 					position: "QB",
 					team_id: 4,
@@ -4374,7 +4374,7 @@ exports.seed = function (knex) {
 					fumble_lost: "5.2",
 				},
 				{
-					id: 157,
+					player_id: 157,
 					player_name: "J. Meyers",
 					position: "WR",
 					team_id: 19,
@@ -4402,7 +4402,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.4",
 				},
 				{
-					id: 158,
+					player_id: 158,
 					player_name: "J. Cook",
 					position: "TE",
 					team_id: 17,
@@ -4430,7 +4430,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.8",
 				},
 				{
-					id: 159,
+					player_id: 159,
 					player_name: "D. Carr",
 					position: "QB",
 					team_id: 16,
@@ -4458,7 +4458,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.1",
 				},
 				{
-					id: 160,
+					player_id: 160,
 					player_name: "J. Reagor",
 					position: "WR",
 					team_id: 28,
@@ -4486,7 +4486,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 161,
+					player_id: 161,
 					player_name: "C. Kmet",
 					position: "TE",
 					team_id: 15,
@@ -4514,7 +4514,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 162,
+					player_id: 162,
 					player_name: "R. Penny",
 					position: "RB",
 					team_id: 6,
@@ -4542,7 +4542,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 163,
+					player_id: 163,
 					player_name: "A. Firkser",
 					position: "TE",
 					team_id: 11,
@@ -4570,7 +4570,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 164,
+					player_id: 164,
 					player_name: "Z. Ertz",
 					position: "TE",
 					team_id: 28,
@@ -4598,7 +4598,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 165,
+					player_id: 165,
 					player_name: "G. Bernard",
 					position: "RB",
 					team_id: 10,
@@ -4626,7 +4626,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 166,
+					player_id: 166,
 					player_name: "R. Gage",
 					position: "WR",
 					team_id: 29,
@@ -4654,7 +4654,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1",
 				},
 				{
-					id: 167,
+					player_id: 167,
 					player_name: "C. Wentz",
 					position: "QB",
 					team_id: 9,
@@ -4682,7 +4682,7 @@ exports.seed = function (knex) {
 					fumble_lost: "7.5",
 				},
 				{
-					id: 168,
+					player_id: 168,
 					player_name: "J. White",
 					position: "RB",
 					team_id: 19,
@@ -4710,7 +4710,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 169,
+					player_id: 169,
 					player_name: "R. Bateman",
 					position: "WR",
 					team_id: 7,
@@ -4738,7 +4738,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 170,
+					player_id: 170,
 					player_name: "T. Cohen",
 					position: "RB",
 					team_id: 15,
@@ -4766,7 +4766,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 171,
+					player_id: 171,
 					player_name: "B. Jarwin",
 					position: "TE",
 					team_id: 21,
@@ -4794,7 +4794,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 172,
+					player_id: 172,
 					player_name: "R. Stevenson",
 					position: "RB",
 					team_id: 19,
@@ -4822,7 +4822,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 173,
+					player_id: 173,
 					player_name: "Z. Wilson",
 					position: "QB",
 					team_id: 31,
@@ -4850,7 +4850,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 174,
+					player_id: 174,
 					player_name: "C. Kirk",
 					position: "WR",
 					team_id: 14,
@@ -4878,7 +4878,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.1",
 				},
 				{
-					id: 175,
+					player_id: 175,
 					player_name: "E. Sanders",
 					position: "WR",
 					team_id: 2,
@@ -4906,7 +4906,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 176,
+					player_id: 176,
 					player_name: "T. Coleman",
 					position: "RB",
 					team_id: 31,
@@ -4934,7 +4934,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 177,
+					player_id: 177,
 					player_name: "S. Darnold",
 					position: "QB",
 					team_id: 24,
@@ -4962,7 +4962,7 @@ exports.seed = function (knex) {
 					fumble_lost: "4.2",
 				},
 				{
-					id: 178,
+					player_id: 178,
 					player_name: "A. Green",
 					position: "WR",
 					team_id: 14,
@@ -4990,7 +4990,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 179,
+					player_id: 179,
 					player_name: "R. Moore",
 					position: "WR",
 					team_id: 14,
@@ -5018,7 +5018,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 180,
+					player_id: 180,
 					player_name: "J. Brown",
 					position: "WR",
 					team_id: 0,
@@ -5046,7 +5046,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 181,
+					player_id: 181,
 					player_name: "D. Williams",
 					position: "RB",
 					team_id: 1,
@@ -5074,7 +5074,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 182,
+					player_id: 182,
 					player_name: "R. Cobb",
 					position: "WR",
 					team_id: 3,
@@ -5102,7 +5102,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 183,
+					player_id: 183,
 					player_name: "C. Hubbard",
 					position: "RB",
 					team_id: 24,
@@ -5130,7 +5130,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.6",
 				},
 				{
-					id: 184,
+					player_id: 184,
 					player_name: "M. Mack",
 					position: "RB",
 					team_id: 9,
@@ -5158,7 +5158,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 185,
+					player_id: 185,
 					player_name: "T. Marshall Jr.",
 					position: "WR",
 					team_id: 24,
@@ -5186,7 +5186,7 @@ exports.seed = function (knex) {
 					fumble_lost: "1.2",
 				},
 				{
-					id: 186,
+					player_id: 186,
 					player_name: "M. Brown",
 					position: "RB",
 					team_id: 13,
@@ -5214,7 +5214,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 187,
+					player_id: 187,
 					player_name: "C. Akers",
 					position: "RB",
 					team_id: 12,
@@ -5242,7 +5242,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 188,
+					player_id: 188,
 					player_name: "A. St. Brown",
 					position: "WR",
 					team_id: 5,
@@ -5270,7 +5270,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 189,
+					player_id: 189,
 					player_name: "C. Hyde",
 					position: "RB",
 					team_id: 32,
@@ -5298,7 +5298,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 190,
+					player_id: 190,
 					player_name: "M. Ingram II",
 					position: "RB",
 					team_id: 30,
@@ -5326,7 +5326,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 191,
+					player_id: 191,
 					player_name: "B. Scott",
 					position: "RB",
 					team_id: 28,
@@ -5354,7 +5354,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 192,
+					player_id: 192,
 					player_name: "C. Newton",
 					position: "QB",
 					team_id: 0,
@@ -5382,7 +5382,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 193,
+					player_id: 193,
 					player_name: "T. Smith",
 					position: "WR",
 					team_id: 4,
@@ -5410,7 +5410,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 194,
+					player_id: 194,
 					player_name: "E. Ebron",
 					position: "TE",
 					team_id: 5,
@@ -5438,7 +5438,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 195,
+					player_id: 195,
 					player_name: "J. Goff",
 					position: "QB",
 					team_id: 5,
@@ -5466,7 +5466,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.4",
 				},
 				{
-					id: 196,
+					player_id: 196,
 					player_name: "B. Edwards",
 					position: "WR",
 					team_id: 16,
@@ -5494,7 +5494,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 197,
+					player_id: 197,
 					player_name: "S. Watkins",
 					position: "WR",
 					team_id: 7,
@@ -5522,7 +5522,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 198,
+					player_id: 198,
 					player_name: "J. Garoppolo",
 					position: "QB",
 					team_id: 23,
@@ -5550,7 +5550,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.9",
 				},
 				{
-					id: 199,
+					player_id: 199,
 					player_name: "T. Hill",
 					position: "QB",
 					team_id: 4,
@@ -5578,7 +5578,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 200,
+					player_id: 200,
 					player_name: "G. Davis",
 					position: "WR",
 					team_id: 2,
@@ -5606,8 +5606,8 @@ exports.seed = function (knex) {
 					fumble_lost: "0.6",
 				},
 				{
-					id: 201,
-					player_name: "T. Bridgewater",
+					player_id: 201,
+					player_name: "T. Brplayer_idgewater",
 					position: "QB",
 					team_id: 4,
 					pass_completions: "394",
@@ -5634,7 +5634,7 @@ exports.seed = function (knex) {
 					fumble_lost: "4",
 				},
 				{
-					id: 202,
+					player_id: 202,
 					player_name: "D. Knox",
 					position: "TE",
 					team_id: 2,
@@ -5662,7 +5662,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 203,
+					player_id: 203,
 					player_name: "H. Hurst",
 					position: "TE",
 					team_id: 29,
@@ -5690,7 +5690,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 204,
+					player_id: 204,
 					player_name: "M. Jones",
 					position: "QB",
 					team_id: 19,
@@ -5718,7 +5718,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.1",
 				},
 				{
-					id: 205,
+					player_id: 205,
 					player_name: "P. Freiermuth",
 					position: "TE",
 					team_id: 5,
@@ -5746,7 +5746,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 206,
+					player_id: 206,
 					player_name: "P. Campbell",
 					position: "WR",
 					team_id: 9,
@@ -5774,7 +5774,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 207,
+					player_id: 207,
 					player_name: "M. Valdes-Scantling",
 					position: "WR",
 					team_id: 3,
@@ -5802,7 +5802,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 208,
+					player_id: 208,
 					player_name: "T. Williams",
 					position: "WR",
 					team_id: 5,
@@ -5830,7 +5830,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 209,
+					player_id: 209,
 					player_name: "D. Booker",
 					position: "RB",
 					team_id: 22,
@@ -5858,7 +5858,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 210,
+					player_id: 210,
 					player_name: "D. Slayton",
 					position: "WR",
 					team_id: 22,
@@ -5886,7 +5886,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 211,
+					player_id: 211,
 					player_name: "J. Wilson Jr.",
 					position: "RB",
 					team_id: 23,
@@ -5914,7 +5914,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 212,
+					player_id: 212,
 					player_name: "X. Jones",
 					position: "RB",
 					team_id: 12,
@@ -5942,7 +5942,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 213,
+					player_id: 213,
 					player_name: "K. Gainwell",
 					position: "RB",
 					team_id: 28,
@@ -5970,7 +5970,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.6",
 				},
 				{
-					id: 214,
+					player_id: 214,
 					player_name: "B. Perriman",
 					position: "WR",
 					team_id: 5,
@@ -5998,7 +5998,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 215,
+					player_id: 215,
 					player_name: "A. Lazard",
 					position: "WR",
 					team_id: 3,
@@ -6026,7 +6026,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 216,
+					player_id: 216,
 					player_name: "J. McKinnon",
 					position: "RB",
 					team_id: 1,
@@ -6054,7 +6054,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 217,
+					player_id: 217,
 					player_name: "D. Williams",
 					position: "RB",
 					team_id: 15,
@@ -6082,7 +6082,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 218,
+					player_id: 218,
 					player_name: "O. Howard",
 					position: "TE",
 					team_id: 10,
@@ -6110,7 +6110,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 219,
+					player_id: 219,
 					player_name: "S. Ahmed",
 					position: "RB",
 					team_id: 13,
@@ -6138,7 +6138,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 220,
+					player_id: 220,
 					player_name: "K. Toney",
 					position: "WR",
 					team_id: 22,
@@ -6166,7 +6166,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 221,
+					player_id: 221,
 					player_name: "T. Gurley II",
 					position: "RB",
 					team_id: 0,
@@ -6194,7 +6194,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 222,
+					player_id: 222,
 					player_name: "D. Evans",
 					position: "RB",
 					team_id: 11,
@@ -6222,7 +6222,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 223,
+					player_id: 223,
 					player_name: "D. Mims",
 					position: "WR",
 					team_id: 31,
@@ -6250,7 +6250,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.8",
 				},
 				{
-					id: 224,
+					player_id: 224,
 					player_name: "J. Jackson",
 					position: "RB",
 					team_id: 17,
@@ -6278,7 +6278,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 225,
+					player_id: 225,
 					player_name: "J. Johnson",
 					position: "WR-TE",
 					team_id: 4,
@@ -6306,7 +6306,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 226,
+					player_id: 226,
 					player_name: "K. Hamler",
 					position: "WR",
 					team_id: 4,
@@ -6334,7 +6334,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 227,
+					player_id: 227,
 					player_name: "B. Snell Jr.",
 					position: "RB",
 					team_id: 5,
@@ -6362,7 +6362,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 228,
+					player_id: 228,
 					player_name: "J. Palmer",
 					position: "WR",
 					team_id: 17,
@@ -6390,7 +6390,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 229,
+					player_id: 229,
 					player_name: "D. Peoples-Jones",
 					position: "WR",
 					team_id: 8,
@@ -6418,7 +6418,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 230,
+					player_id: 230,
 					player_name: "D. Jackson",
 					position: "WR",
 					team_id: 12,
@@ -6446,7 +6446,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 231,
+					player_id: 231,
 					player_name: "D. Lock",
 					position: "QB",
 					team_id: 4,
@@ -6474,7 +6474,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 232,
+					player_id: 232,
 					player_name: "J. Kelley",
 					position: "RB",
 					team_id: 17,
@@ -6502,7 +6502,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 233,
+					player_id: 233,
 					player_name: "T. Taylor",
 					position: "QB",
 					team_id: 30,
@@ -6530,7 +6530,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.4",
 				},
 				{
-					id: 234,
+					player_id: 234,
 					player_name: "V. Jefferson Jr.",
 					position: "WR",
 					team_id: 12,
@@ -6558,7 +6558,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.8",
 				},
 				{
-					id: 235,
+					player_id: 235,
 					player_name: "T. Jones Jr.",
 					position: "RB",
 					team_id: 4,
@@ -6586,7 +6586,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 236,
+					player_id: 236,
 					player_name: "H. Renfrow",
 					position: "WR",
 					team_id: 16,
@@ -6614,7 +6614,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.7",
 				},
 				{
-					id: 237,
+					player_id: 237,
 					player_name: "A. Rodgers",
 					position: "WR",
 					team_id: 3,
@@ -6642,7 +6642,7 @@ exports.seed = function (knex) {
 					fumble_lost: "3.2",
 				},
 				{
-					id: 238,
+					player_id: 238,
 					player_name: "T. Johnson",
 					position: "RB",
 					team_id: 31,
@@ -6670,7 +6670,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 239,
+					player_id: 239,
 					player_name: "D. Brown",
 					position: "WR",
 					team_id: 20,
@@ -6698,7 +6698,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 240,
+					player_id: 240,
 					player_name: "L. Bell",
 					position: "RB",
 					team_id: 0,
@@ -6726,7 +6726,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 241,
+					player_id: 241,
 					player_name: "N. Collins",
 					position: "WR",
 					team_id: 30,
@@ -6754,7 +6754,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 242,
+					player_id: 242,
 					player_name: "C. Patterson",
 					position: "WR-RB",
 					team_id: 29,
@@ -6782,7 +6782,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 243,
+					player_id: 243,
 					player_name: "Q. Ollison",
 					position: "RB",
 					team_id: 0,
@@ -6810,7 +6810,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 244,
+					player_id: 244,
 					player_name: "W. Gallman II",
 					position: "RB",
 					team_id: 18,
@@ -6838,7 +6838,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 245,
+					player_id: 245,
 					player_name: "J. Funk",
 					position: "RB",
 					team_id: 12,
@@ -6866,7 +6866,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 246,
+					player_id: 246,
 					player_name: "D. Arnold",
 					position: "TE",
 					team_id: 24,
@@ -6894,7 +6894,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 247,
+					player_id: 247,
 					player_name: "T. Patrick",
 					position: "WR",
 					team_id: 4,
@@ -6922,7 +6922,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 248,
+					player_id: 248,
 					player_name: "D. Schultz",
 					position: "TE",
 					team_id: 21,
@@ -6950,7 +6950,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 249,
+					player_id: 249,
 					player_name: "J. Graham",
 					position: "TE",
 					team_id: 15,
@@ -6978,7 +6978,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.9",
 				},
 				{
-					id: 250,
+					player_id: 250,
 					player_name: "A. Dalton",
 					position: "QB",
 					team_id: 15,
@@ -7006,7 +7006,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 251,
+					player_id: 251,
 					player_name: "Q. Watkins",
 					position: "WR",
 					team_id: 28,
@@ -7034,7 +7034,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 252,
+					player_id: 252,
 					player_name: "J. Patterson",
 					position: "RB",
 					team_id: 20,
@@ -7062,7 +7062,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 253,
+					player_id: 253,
 					player_name: "J. Guyton",
 					position: "WR",
 					team_id: 17,
@@ -7090,7 +7090,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 254,
+					player_id: 254,
 					player_name: "K. Coutee",
 					position: "WR",
 					team_id: 9,
@@ -7118,7 +7118,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 255,
+					player_id: 255,
 					player_name: "C. Herndon",
 					position: "TE",
 					team_id: 18,
@@ -7146,7 +7146,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 256,
+					player_id: 256,
 					player_name: "P. Williams",
 					position: "WR",
 					team_id: 13,
@@ -7174,7 +7174,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 257,
+					player_id: 257,
 					player_name: "D. Parham Jr.",
 					position: "TE",
 					team_id: 17,
@@ -7202,7 +7202,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 258,
+					player_id: 258,
 					player_name: "J. Washington",
 					position: "WR",
 					team_id: 5,
@@ -7230,7 +7230,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 259,
+					player_id: 259,
 					player_name: "T. Fulgham",
 					position: "WR",
 					team_id: 28,
@@ -7258,7 +7258,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 260,
+					player_id: 260,
 					player_name: "J. Reynolds",
 					position: "WR",
 					team_id: 11,
@@ -7286,7 +7286,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 261,
+					player_id: 261,
 					player_name: "S. Perine",
 					position: "RB",
 					team_id: 27,
@@ -7314,8 +7314,8 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 262,
-					player_name: "D. Eskridge",
+					player_id: 262,
+					player_name: "D. Eskrplayer_idge",
 					position: "WR",
 					team_id: 6,
 					pass_completions: "0",
@@ -7342,7 +7342,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 263,
+					player_id: 263,
 					player_name: "T. Atwell",
 					position: "WR",
 					team_id: 12,
@@ -7370,7 +7370,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 264,
+					player_id: 264,
 					player_name: "D. Duvernay",
 					position: "WR",
 					team_id: 7,
@@ -7398,7 +7398,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 265,
+					player_id: 265,
 					player_name: "D. Harris",
 					position: "WR",
 					team_id: 4,
@@ -7426,7 +7426,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 266,
+					player_id: 266,
 					player_name: "A. Miller",
 					position: "WR",
 					team_id: 30,
@@ -7454,7 +7454,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 267,
+					player_id: 267,
 					player_name: "T. Tebow",
 					position: "TE",
 					team_id: 32,
@@ -7482,7 +7482,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 268,
+					player_id: 268,
 					player_name: "K. Johnson",
 					position: "RB",
 					team_id: 28,
@@ -7510,7 +7510,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 269,
+					player_id: 269,
 					player_name: "Z. Pascal",
 					position: "WR",
 					team_id: 9,
@@ -7538,7 +7538,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 270,
+					player_id: 270,
 					player_name: "S. Miller",
 					position: "WR",
 					team_id: 10,
@@ -7566,7 +7566,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 271,
+					player_id: 271,
 					player_name: "K. Vaughn",
 					position: "RB",
 					team_id: 10,
@@ -7594,7 +7594,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 272,
+					player_id: 272,
 					player_name: "K. Rudolph",
 					position: "TE",
 					team_id: 22,
@@ -7622,7 +7622,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 273,
+					player_id: 273,
 					player_name: "D. Freeman",
 					position: "RB",
 					team_id: 0,
@@ -7650,8 +7650,8 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 274,
-					player_name: "M. Breida",
+					player_id: 274,
+					player_name: "M. Breplayer_ida",
 					position: "RB",
 					team_id: 2,
 					pass_completions: "0",
@@ -7678,7 +7678,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 275,
+					player_id: 275,
 					player_name: "K. Bourne",
 					position: "WR",
 					team_id: 19,
@@ -7706,7 +7706,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 276,
+					player_id: 276,
 					player_name: "J. Doyle",
 					position: "TE",
 					team_id: 9,
@@ -7734,7 +7734,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 277,
+					player_id: 277,
 					player_name: "J. Love",
 					position: "QB",
 					team_id: 3,
@@ -7762,7 +7762,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 278,
+					player_id: 278,
 					player_name: "B. Pringle",
 					position: "WR",
 					team_id: 1,
@@ -7790,7 +7790,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 279,
+					player_id: 279,
 					player_name: "K. Cole Sr.",
 					position: "WR",
 					team_id: 31,
@@ -7818,7 +7818,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 280,
+					player_id: 280,
 					player_name: "R. Higgins",
 					position: "WR",
 					team_id: 8,
@@ -7846,7 +7846,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 281,
+					player_id: 281,
 					player_name: "M. Alie-Cox",
 					position: "TE",
 					team_id: 9,
@@ -7874,7 +7874,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 282,
+					player_id: 282,
 					player_name: "A. Humphries",
 					position: "WR",
 					team_id: 20,
@@ -7902,7 +7902,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 283,
+					player_id: 283,
 					player_name: "L. Rountree III",
 					position: "RB",
 					team_id: 17,
@@ -7930,7 +7930,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 284,
+					player_id: 284,
 					player_name: "Q. Cephus",
 					position: "WR",
 					team_id: 5,
@@ -7958,7 +7958,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 285,
+					player_id: 285,
 					player_name: "J. Jefferson",
 					position: "RB",
 					team_id: 5,
@@ -7986,7 +7986,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 286,
+					player_id: 286,
 					player_name: "M. Trubisky",
 					position: "QB",
 					team_id: 2,
@@ -8014,7 +8014,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 287,
+					player_id: 287,
 					player_name: "T. Wallace",
 					position: "WR",
 					team_id: 7,
@@ -8042,7 +8042,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 288,
+					player_id: 288,
 					player_name: "A. McFarland Jr.",
 					position: "RB",
 					team_id: 5,
@@ -8070,7 +8070,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 289,
+					player_id: 289,
 					player_name: "J. Eason",
 					position: "QB",
 					team_id: 9,
@@ -8098,7 +8098,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 290,
+					player_id: 290,
 					player_name: "L. Perine",
 					position: "RB",
 					team_id: 31,
@@ -8126,7 +8126,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 291,
+					player_id: 291,
 					player_name: "J. Hawkins",
 					position: "RB",
 					team_id: 11,
@@ -8154,7 +8154,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 292,
+					player_id: 292,
 					player_name: "C. Evans",
 					position: "RB",
 					team_id: 27,
@@ -8182,7 +8182,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 293,
+					player_id: 293,
 					player_name: "D. Njoku",
 					position: "TE",
 					team_id: 8,
@@ -8210,7 +8210,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 294,
+					player_id: 294,
 					player_name: "D. Robinson",
 					position: "WR",
 					team_id: 1,
@@ -8238,7 +8238,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 295,
+					player_id: 295,
 					player_name: "K. Herbert",
 					position: "RB",
 					team_id: 15,
@@ -8266,7 +8266,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 296,
+					player_id: 296,
 					player_name: "T. Kroft",
 					position: "TE",
 					team_id: 31,
@@ -8294,7 +8294,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 297,
+					player_id: 297,
 					player_name: "C. Conley",
 					position: "WR",
 					team_id: 30,
@@ -8322,7 +8322,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 298,
+					player_id: 298,
 					player_name: "K. Hill",
 					position: "RB",
 					team_id: 3,
@@ -8350,7 +8350,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0.6",
 				},
 				{
-					id: 299,
+					player_id: 299,
 					player_name: "N. Harry",
 					position: "WR",
 					team_id: 19,
@@ -8378,7 +8378,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 300,
+					player_id: 300,
 					player_name: "D. Dallas",
 					position: "RB",
 					team_id: 6,
@@ -8406,7 +8406,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 301,
+					player_id: 301,
 					player_name: "G. Minshew II",
 					position: "QB",
 					team_id: 28,
@@ -8434,7 +8434,7 @@ exports.seed = function (knex) {
 					fumble_lost: "0",
 				},
 				{
-					id: 302,
+					player_id: 302,
 					player_name: "T. Williams",
 					position: "RB",
 					team_id: 7,
