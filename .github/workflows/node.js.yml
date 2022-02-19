@@ -28,9 +28,9 @@ jobs:
         cache: 'npm'
     - run: |
         npm ci
-    # - run: |
-    #     npx knex migrate:latest
-    #     npx knex seed:run
+    - run: |
+        npx knex migrate:latest
+        npx knex seed:run
     # - run: |
     #     sudo service nginx restart
 
