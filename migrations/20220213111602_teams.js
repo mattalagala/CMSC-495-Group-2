@@ -21,5 +21,5 @@ exports.up = function (knex) {
 };
 
 exports.down = function (knex) {
-	return knex.raw(createTeamsTable);
+	return knex.raw(dropTeamsTable);
 };

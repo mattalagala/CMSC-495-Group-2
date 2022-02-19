@@ -39,5 +39,5 @@ exports.up = function (knex) {
 };
 
 exports.down = function (knex) {
-	return knex.raw(createPlayersTable);
+	return knex.raw(dropPlayersTable);
 };
