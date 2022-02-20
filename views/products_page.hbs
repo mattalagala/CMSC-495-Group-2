@@ -47,7 +47,7 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
       {{!-- <img src="/img/logo.png" height='50'> --}}
-      <a class="navbar-brand ml-2" href="https://www.northrange.dev">Project Vault</a>
+      <a class="navbar-brand ml-2" href="/">Stats App</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -55,7 +55,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="https://www.northrange.dev">Home
+            <a class="nav-link" href="/">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -73,334 +73,75 @@
         </ul>
   </nav>
 
-  {{#each theCategory}}
+
 
   <!-- Page Content -->
 
   <!-- Jumbotron Header -->
-  <header class="masthead" id="product-mast">
+  <header class="masthead">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
+         {{#each theDivisions}}
         <div class="col-12 text-center">
-          <h1 class="font-weight-light display-2">{{this.category_name}}</h1>
-          <p class="lead" id="header-description"></p>
+          <h1 class="font-weight-light display-2">{{this.division_name}} Teams</h1>
         </div>
+         {{/each}}
       </div>
     </div>
   </header>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Page Content -->
+  <div class="container">
   <!-- Page Features -->
 
-  {{!-- <div class="container h-100" id="gallery">
-    <div class="row h-100 align-items-center">
-      <div class="col-md-4 shrink">
-        <img class="img-fluid" alt="Responsive image" src="/uploads/{{this.category_picture}}">
-      </div>
-      <div class="col-md-4 shrink">
-        <img class="img-fluid" alt="Responsive image" src="/uploads/{{this.category_picture}}">
-      </div>
-      <div class="col-md-4 shrink">
-        <img class="img-fluid" alt="Responsive image" src="/uploads/{{this.category_picture}}">
-      </div>
-      <div class="col-md-4 shrink">
-        <img class="img-fluid" alt="Responsive image" src="/uploads/{{this.category_picture}}">
-      </div>
-      <div class="col-md-4 shrink">
-        <img class="img-fluid" alt="Responsive image" src="/uploads/{{this.category_picture}}">
-      </div>
-      <div class="col-md-4 shrink">
-        <img class="img-fluid" src="/uploads/{{this.category_picture}}">
-      </div>
-    </div>
-  </div>
-  </div> --}}
 
 
-  {{!-- <div>
-    Begin Separator
-  </div> --}}
+  <div class="row text-center justify-content-center" id="myItems">
+        {{#each theTeams}}
+    <div class="col-4">
+          {{!-- col-lg-2 col-md-2 mb-4 --}}
 
-
-
-  <div class="gallery-section">
-    <div class="inner-width">
-      {{!-- <h1>My Gallery</h1> --}}
-      <div class="border"></div>
-      <div class="gallery" id="testGallery">
-
-        {{#if this.category_picture}}
-        <a href="/uploads/{{this.category_picture}}" class="image" value="Mac">
-          <img src="/uploads/{{this.category_picture}}" alt="Mac">
-        </a>
-        {{/if}}
-
-        {{#if this.category_picture2}}
-        <a href="/uploads/{{this.category_picture2}}" class="image" value="Mac">
-          <img src="/uploads/{{this.category_picture2}}" alt="Mac">
-        </a>
-        {{/if}}
-
-        {{#if this.category_picture3}}
-        <a href="/uploads/{{this.category_picture3}}" class="image" value="Mac">
-          <img src="/uploads/{{this.category_picture3}}" alt="Mac">
-        </a>
-        {{/if}}
-
-        {{#if this.category_picture4}}
-        <a href="/uploads/{{this.category_picture4}}" class="image" value="Mac">
-          <img src="/uploads/{{this.category_picture4}}" alt="Mac">
-        </a>
-        {{/if}}
-
-        {{#if this.category_picture5}}
-        <a href="/uploads/{{this.category_picture5}}" class="image" value="Mac">
-          <img src="/uploads/{{this.category_picture5}}" alt="Mac">
-        </a>
-        {{/if}}
-
-        {{#if this.category_picture6}}
-        <a href="/uploads/{{this.category_picture6}}" class="image" value="Mac">
-          <img src="/uploads/{{this.category_picture6}}" alt="Mac">
-        </a>
-        {{/if}}
-
-        {{#if this.category_picture7}}
-        <a href="/uploads/{{this.category_picture7}}" class="image" value="Mac">
-          <img src="/uploads/{{this.category_picture7}}" alt="Mac">
-        </a>
-        {{/if}}
-
-        {{#if this.category_picture8}}
-        <a href="/uploads/{{this.category_picture8}}" class="image" value="Mac">
-          <img src="/uploads/{{this.category_picture8}}" alt="Mac">
-        </a>
-        {{/if}}
-
-
-      </div>
-      <div class="border"></div>
-    </div>
-  </div>
-
-  {{!-- 
-
-  <div>
-    End Separator
-  </div> --}}
-
-
-
-
-
-  <!-- Contents -->
-
-  <div class="container">
+          <div class="card h-100">
+            <a href=" /category/{{this.division_id}}"><img class="card-img-top" src="{{this.division_logo}}" alt=""></a>
+            <div class=" card-body d-flex flex-column mt-auto">
+              <h4 class="card-title">{{this.team_name}}</h4>
+            </div>
+    <div class="container">
 
     <div class="row text-left justify-content-center">
 
       <div class="col-lg-8 col-md-3 mb-4">
-        <h4 id="card-description-title">Description</h4>
-        <p class="product-text">{{this.category_description}}</p>
-
-        <h4 id="card-description-title">Technologies Used</h4>
-
-        <div class="row">
-          {{#if this.category_javascript}}
-          <i class="fab fa-js-square"></i>
-          {{/if}}
-
-          {{#if this.category_react}}
-          <i class="fab fa-react"></i>
-          {{/if}}
-
-          {{#if this.category_html}}
-          <i class="fab fa-html5"></i>
-          {{/if}}
-
-          {{#if this.category_css}}
-          <i class="fab fa-css3-alt"></i>
-          {{/if}}
-
-          {{#if this.category_python}}
-          <i class="fab fa-python"></i>
-          {{/if}}
-
-          {{#if this.category_node}}
-          <i class="fab fa-node-js"></i>
-          {{/if}}
-
-          {{#if this.category_express}}
-          <i class="fab fa-js-square"></i>
-          {{/if}}
-
-          {{#if this.category_json}}
-
-          {{/if}}
-
-          {{#if this.category_rest}}
-
-          {{/if}}
-
-          {{#if this.category_sql}}
-          <i class="fas fa-database"></i>
-          {{/if}}
-
-          {{#if this.category_cloud}}
-          <i class="fas fa-cloud-upload-alt"></i>
-          {{/if}}
-
-        </div>
-
-        {{#if this.category_git}}
-        <h4 id="card-description-title">Project Repo</h2>
-          <a class="product-text" href="{{this.category_git}}" target='blank'>{{this.category_git}}</a>
-          {{/if}}
+        <h5 id="card-description-title">Wins: {{this.wins}}</h5>
+        <h5 id="card-description-title">Losses: {{this.losses}}</h5>
+        <h5 id="card-description-title">Ties: {{this.ties}}</h5>
       </div>
-      <div class="col-lg-4 col-md-3 mb-4">
 
-        <h4 id="card-description-title">Team Name</h2>
-          <p class="product-text">{{this.category_team_name}}</p>
+    <div class="col-lg-4 col-md-3 mb-4">
 
-          <h4 id="card-description-title">Members</h2>
-            <p class="product-text">{{this.category_memberone}}</p>
-            {{#if this.category_url}}
-            <h4 id="card-description-title">URL</h2>
-              <a class="product-text" href="{{this.category_url}}" target='blank'>{{this.category_url}}</a>
-              {{/if}}
-              <h4 id="card-description-title">Cohort</h2>
-                <a href="https://www.digitalcrafts.com" target="blank">
-                  <p class="product-text">{{this.category_cohort}}</p>
-                </a>
-
-      </div>
+        <h5 id="card-description-title">Division Rank: {{this.division_rank}}</h5>
+        <h5 id="card-description-title">League Rank: {{this.league_rank}}</h5>
+      
+    </div>
 
     </div>
 
   </div>
 
-
-
-
-
-
-
-
-  <div class="section w-100" id="contact-section">
-    <div class="container">
-
-
-
-      <div class="row text-left justify-content-center">
-
-        <div class="col-lg-2 col-md-4 mb-4">
-          <h4 id="card-description-title"></h4>
-          <img class="card-img-top" alt="Responsive image" src="/uploads/{{this.category_onepicture}}">
-
-          <h4 id="contact-description-title">Developer</h2>
-            <p class="product-text">{{this.category_memberone}}</p>
-            <div class="row">
-
-            </div>
-        </div>
-
-        <div class="col-lg-4 col-md-3 mb-4">
-
-
-          <h4 id="contact-description-title">Social</h2>
-
-
-            {{#if this.category_onegit}}
-            <a href="{{this.category_git}}" target="blank"><i class="fab fa-github-square" id="socialIcons"></i></a>
-            {{/if}}
-
-            {{#if this.category_onelinkedin}}
-            <a href="{{this.category_onelinkedin}}" target="blank"><i class="fab fa-linkedin" id="socialIcons"></i></a>
-            {{/if}}
-
-            {{#if this.category_onetwitter}}
-            <a href="{{this.category_twitter}}" target="blank"><i class="fab fa-twitter-square"
-                id="socialIcons"></i></a>
-            {{/if}}
-
-            <h4 id="contact-description-title">Email</h2>
-              <a href="mailto:{{this.category_twitter}}" target="blank">
-                <p class="product-text">{{this.category_oneemail}}</p>
-              </a>
-
-              <a href="https://www.digitalcrafts.com" target="blank">
-                <h4 id="contact-description-title">Cohort</h2>
-                  <p class="product-text">{{this.category_cohort}}</p>
-              </a>
-
-        </div>
-
-
-
-
-      </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    {{!-- 
-
-
-
-    <div class="row text-center justify-content-center p-4">
-
-      <div class="col-lg-6 col-md-3 mb-4">
-
-        <!-- Team Info -->
-
-        <div class="row text-center justify-content-center">
-          <div class="col-6">
-            <div class="card h-100">
-              <img class="card-img-top" alt="Responsive image" src="/uploads/{{this.category_onepicture}}">
-              <div class=" card-body d-flex flex-column mt-auto">
-                <h4 class="card-title">{{this.category_memberone}}</h4>
-                <h6 id="card-description-title">Email</h2>
-                  <p class="card-text">{{this.category_oneemail}}</p>
-
-
-              </div>
-              <div class="card-footer">
-                <a href="/category/{{this.category_id}}" class="btn btn-primary" id="checkout-btn">View Details</a>
-              </div>
+            <div class="card-footer">
+              <a href="/category/{{this.division_id}}" class="btn btn-primary" id="checkout-btn">View Details</a>
             </div>
           </div>
+
         </div>
-
-
-      </div> --}}
-    <!-- /.row -->
-  </div>
-
-  </div>
-
-  </div>
-  {{/each}}
+        {{/each}}
+      </div>
   <!-- /.container -->
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Matthew Alagala 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; CMSC 495 Group 2</p>
     </div>
     <!-- /.container -->
   </footer>

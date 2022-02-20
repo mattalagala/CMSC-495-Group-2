@@ -432,13 +432,13 @@ app.param("category_id", function (req, res, nextFn, category_id) {
 });
 
 app.get("/category/:category_id", function (req, res) {
-	const theProducts = req.monkMusic.products;
-	const theCategory = req.monkMusic.category;
-	console.log(theCategory, "**#*#*#*#*#*#* CHECK THIS OUT!!");
+	const theTeams = req.monkMusic.products;
+	const theDivisions = req.monkMusic.category;
+	console.log(theTeams, "**#*#*#*#*#*#* CHECK THIS OUT!!");
 	db.getCategoryList().then((lists) => {
 		res.render("products_page", {
-			theProducts: theProducts,
-			theCategory: theCategory,
+			theTeams: theTeams,
+			theDivisions: theDivisions,
 		});
 	});
 });
