@@ -51,7 +51,7 @@ app.get("/logged_out", (req, res) => {
 //Google Route Failure
 app.get("/failed", (req, res) => res.send("Login Failed"));
 app.get("/success", isLoggedIn, (req, res) => {
-	db.getCategoryList().then((lists) => {
+	db.getDivisionList().then((lists) => {
 		res.render("index", { lists: lists });
 	});
 });
@@ -88,20 +88,20 @@ app.get("/logout", (req, res) => {
 
 // // Shows the lists on the homepage
 app.get("/", function (req, res) {
-	db.getCategoryList().then((lists) => {
+	db.getDivisionList().then((lists) => {
 		res.render("index", { lists: lists });
 		console.log(lists);
 	});
 });
 
 app.get("/login", function (req, res) {
-	db.getCategoryList().then((lists) => {
+	db.getDivisionList().then((lists) => {
 		res.render("login", { lists: lists });
 	});
 });
 
 app.get("/form", function (req, res) {
-	db.getCategoryList().then((lists) => {
+	db.getDivisionList().then((lists) => {
 		res.render("form", { lists: lists });
 	});
 });
@@ -435,7 +435,7 @@ app.get("/category/:category_id", function (req, res) {
 	const theTeams = req.monkMusic.products;
 	const theDivisions = req.monkMusic.category;
 	console.log(theTeams, "**#*#*#*#*#*#* CHECK THIS OUT!!");
-	db.getCategoryList().then((lists) => {
+	db.getDivisionList().then((lists) => {
 		res.render("products_page", {
 			theTeams: theTeams,
 			theDivisions: theDivisions,
@@ -461,7 +461,7 @@ app.param("products_id", function (req, res, nextFn, products_id) {
 app.get("/category/:category_id/:products_id", function (req, res) {
 	const theItem = req.monkMusic.item;
 	console.log(theItem, "**#*#*#*#*#*#* getItem PROMISE");
-	db.getProductsList()
+	db.getTeamsList()
 		.then((result) => {
 			res.render("item_page", { theItem: theItem });
 		})
@@ -472,7 +472,12 @@ app.get("/category/:category_id/:products_id", function (req, res) {
 
 const startExpressApp = () => {
 	app.listen(port, () => {
+		var os = require('os');
+
+		var networkInterfaces = os.networkInterfaces();
+		var address = networkInterfaces['Ethernet'][0].address + ':' + port;
 		console.log("express is listening on port " + port);
+		console.log("Access app at : http://" + address)
 	});
 };
 
@@ -482,19 +487,19 @@ function bootupSequenceFailed(err) {
 	process.exit(1);
 }
 
-function fetchCategoryList() {
-	db.getCategoryList().then((lists) => {});
+function fetchDivisionList() {
+	db.getDivisionList().then((lists) => { });
 }
 
 function fetchProductsList() {
-	db.getProductsList().then((products) => {});
+	db.getTeamsList().then((products) => { });
 }
 
 // Global kickoff point
 db.connect()
 	.then(startExpressApp)
 	.then(fetchProductsList)
-	.then(fetchCategoryList)
+	.then(fetchDivisionList)
 
 	.then(() => {
 		console.log("You connected to the database!");
