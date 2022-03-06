@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class='no-js' lang="en">
 
 <head>
 
@@ -9,9 +9,10 @@
 
   <meta name="author" content="">
 
-  <title>Sports Statistics Tracker</title>
+  <title>Stats App</title>
 
   <!-- Bootstrap core CSS -->
+  <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/38d7facff3.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
@@ -19,7 +20,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 
   <!-- Custom styles for this template -->
-  <link href="css/heroic-features.css" rel="stylesheet">
+  <link href="/css/heroic-features.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/style2.css" rel="stylesheet">
 
@@ -55,12 +56,15 @@
   </nav>
 
 
+
 <header class="masthead">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
-          <h1 class="font-weight-light display-2">Sports Statistics Tracker</h1>
+          {{!-- {{#each theTeam}} --}}
+          <h1 class="font-weight-light display-2">Sports Statistics Tracker {{this.team_id}}</h1>
           <p class="lead" id="header-description">Updates sports statistics</p>
+          {{!-- {{/each}} --}}
         </div>
       </div>
     </div>
@@ -69,54 +73,73 @@
 
   <!-- Page Content -->
   <div class="container">
-    {{!-- <!-- Jumbotron Header -->
-    <header class="masthead">
-      <h1 class="display-3 text-center">A Market for New and Upcoming Talent</h1>
-      <p classcenter">We have a wide selection of equipment ranging from live performance to recording!</p>
-    </header> --}}
 
+    <!-- Jumbotron Header -->
+    {{!-- <header class="jumbotron my-4"> --}}
+      {{!-- {{lists}}
+      <h1 class="display-3">Here is our inventory of {{listName}}</h1>
+      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
+      <a href="#" class="btn btn-primary btn-lg">Call to action!</a> --}}
 
+    {{!-- </header> --}}
 
-    {{!-- <h6 id="card-description-title">Filter By Technology</h2>
-      <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">
- --}}
+    <!-- Page Features -->
 
-      <!-- Page Features -->
-
-      <div class="row text-center justify-content-center" id="myItems">
-        {{#each lists}}
-        <div class="col-4">
+   <div class="row text-center justify-content-center" id="myItems">
+        {{#each thePlayerData}}
+    <div class="col-8">
           {{!-- col-lg-2 col-md-2 mb-4 --}}
 
           <div class="card h-100">
-            <a href=" /category/{{this.division_id}}"><img class="card-img-top" src="{{this.division_logo}}"
-                alt=""></a>
+            {{!-- <a href=" /category/{{this.division_id}}"><img class="card-img-top" src="{{this.division_logo}}" alt=""></a> --}}
             <div class=" card-body d-flex flex-column mt-auto">
-              <h4 class="card-title">{{this.division_name}}</h4>
+              <h4 class="card-title">{{this.player_name}}</h4>
+              <h5 class="card-title">{{this.team_name}}</h5>
             </div>
-            <div class="card-footer">
-              <a href="/category/{{this.division_id}}" class="btn btn-primary" id="checkout-btn">View Details</a>
-            </div>
-          </div>
+    <div class="container">
 
-        </div>
-        {{/each}}
+    <div class="row text-left justify-content-center">
+
+      <div class="col-lg-6 col-md-3 mb-4">
+        <h5 id="card-description-title">Position: {{this.position}}</h5>
+        <h5 id="card-description-title">Receiving Yards: {{this.receiving_yards}}</h5>
+        <h5 id="card-description-title">Rush Touch Downs: {{this.rush_touch_downs}}</h5>
+        <h5 id="card-description-title">Rush First Downs: {{this.rush_first_downs}}</h5>
       </div>
-      <!-- Page Features -->
+
+    <div class="col-lg-6 col-md-3 mb-4">
+
+        <h5 id="card-description-title">Rush Attempts: {{this.rush_attempts}}</h5>
+        <h5 id="card-description-title">Rush Yards: {{this.rush_yards}}</h5>
+        <h5 id="card-description-title">Receiving Targetted: {{this.receiving_targetted}}</h5>
+        <h5 id="card-description-title">Receiving_catches: {{this.receiving_catches}}</h5>
+      
+    </div>
+
+    </div>
+
+  </div>
+          <div class="card-footer">
+
+          </div>
+        </div>
+
+      </div>
+      {{/each}}
+
+    </div>
+    <!-- /.row -->
 
   </div>
   <!-- /.container -->
-
-  
-  
-  </body>
-<!-- Footer -->
-<footer class="py-5 bg-dark">
-  <div class="container">
-    <p class="m-0 text-center text-white">Copyright &copy; CMSC 495 Group 2</p>
-  </div>
-  <!-- /.container -->
-</footer>
+</body>
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+    </div>
+    <!-- /.container -->
+  </footer>
 
 <!-- Bootstrap core JavaScript -->
 <script src="/vendor/jquery/jquery.min.js"></script>
