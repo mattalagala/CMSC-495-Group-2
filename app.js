@@ -168,8 +168,8 @@ app.param("team_id", function (req, res, nextFn, team_id) {
 
 app.get("/category/:category_id/team/:team_id", function (req, res) {
 	const thePlayer = req.app.player;
-	const theTeam = req.app.products;
-	console.log(thePlayer, "**#*#*#*#*#*#* getPlayer PROMISE");
+	const theTeam = req.app.player[0].team_name;
+	console.log(theTeam, "**#*#*#*#*#*#* getPlayer PROMISE");
 	db.getProductsList()
 		.then((result) => {
 			res.render("team_page", {
