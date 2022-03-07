@@ -1,1 +1,0 @@
-SELECT * FROM players JOIN teams USING (team_id) JOIN division USING (division_id) WHERE player_id = 42;
